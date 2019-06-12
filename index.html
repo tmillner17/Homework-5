@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,47 +8,71 @@
     <title>Tylers Trivia Game</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </script>
 </head>
+
 <body id="background">
     <h1 class="title">Trivia Game!</h1>
-    <h2 class="title">Timer:</h2>
-<div>
-    <h3>1.)Which family of snake lays egss?</h2>
-    <button>Python</button>
-    <button>Boa</button>
-    <button>Colubrid</button>
-    <button>Anacondas</button>
-</div>
-<div>
-    <h3>2.) Who is considered the best basketball player of all time?</h3>
-    <button>Michael Jordan</button>
-    <button>Lebron James</button>
-    <button>Wilt chamberlin</button>
-    <button>Bill Russel</button>
-</div>
-<h3>3.) In what year did Michael Jordan play in the famous "flu game"?</h3>
-<button>1995</button>
-<button>1990</button>
-<button>1992</button>
-<button>1998</button>
-<div>
-    <h3>4.) What species of snake is considered the longest on the planet today?</h3>
-    <button>Greeen Anaconda</button>
-    <button>Reticulated python</button>
-    <button>Bermese Python</button>
-    <button>Titana Boa</button>
-</div>
-<div>
-    <h3>5.) Which species of lizard is the longest in the world?</h3>
-    <button>Asian Water Monitor</button>
-    <button>Nile Monitor</button>
-    <button>Komodo Dragon</button>
-    <button>Mangrove Monitor</button>
-</div>
-<p>Correct Answers:</p>
-<p>Incorrect Answers:</p>
-<button>Reset Game</button>
+    <h2 class="timer title">Timer:</h2>
+    <button>Start</button>
+    <div>
+        <div class="h3">
+            <h3>1.)Which family of snake lays egss?</h2>
+        </div>
+        <div class="buttons">
+            <input name="q0" type="radio" data-question="0" value="Python">Python</input>
+            <input name="q0" type="radio" data-question="0">Boa</input>
+            <input name="q0" type="radio" data-question="0">Colubrid</input>
+            <input name="q0" type="radio" data-question="0">Anacondas</input>
+        </div>
+    </div>
+    <div>
+        <div class="h3">
+            <h3>2.) Who is considered the best basketball player of all time?</h3>
+        </div>
+        <div class="buttons">
+            <input name="q1" type="radio" data-question="1">Michael Jordan</input>
+            <input name="q1" type="radio" data-question="1">Lebron James</input>
+            <input name="q1" type="radio" data-question="1">Wilt chamberlin</input>
+            <input name="q1" type="radio" data-question="1">Bill Russel</input>
+        </div>
+    </div>
+    <div class="h3">
+        <h3>3.) In what year did Michael Jordan play in the famous "flu game"?</h3>
+    </div>
+    <div class="buttons">
+        <input name="q2" type="radio" data-question="2">1995</input>
+        <input name="q2" type="radio" data-question="2">1990</input>
+        <input name="q2" type="radio" data-question="2">1992</input>
+        <input name="q2" type="radio" data-question="2">1998</input>
+    </div>
+    <div>
+        <div class="h3">
+            <h3>4.) What species of snake is considered the longest on the planet today?</h3>
+        </div>
+        <div class="buttons">
+            <input name="q3" type="radio" data-question="3">Greeen Anaconda</input>
+            <input name="q3" type="radio" data-question="3">Reticulated python</input>
+            <input name="q3" type="radio" data-question="3">Bermese Python</input>
+            <input name="q3" type="radio" data-question="3">Titana Boa</input>
+        </div>
+    </div>
+    <div>
+        <div class="h3">
+            <h3>5.) Which species of lizard is the longest in the world?</h3>
+        </div>
+        <div class="buttons">
+            <input name="q4" type="radio" data-question="4">Asian Water Monitor</input>
+            <input name="q4" type="radio" data-question="4">Nile Monitor</input>
+            <input name="q4" type="radio" data-question="4">Komodo Dragon</input>
+            <input name="q4" type="radio" data-question="4">Mangrove Monitor</input>
+        </div>
+    </div>
+    <p id="correct-answers">Correct Answers:</p>
+    <p>Incorrect Answers:</p>
+    <button>Reset Game</button> <button id="done">Done</button>
     <script type="text/javascript" src="javascript.js"></script>
 </body>
+
 </html>
