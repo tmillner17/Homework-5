@@ -11,7 +11,7 @@ function doneClick() {
         console.log(curAnswer, answers[curQuestion]);
         if (curAnswer === answers[curQuestion]) {
             correctAnswers++
-            $("#correct-answers").text("Correct Answers:" + correctAnswers + '/' + answers.length)
+            $("#correct-answers ").text("Correct Answers:" + correctAnswers + '/' + answers.length)
         }
     });
 }
